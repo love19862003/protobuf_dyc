@@ -15,7 +15,7 @@
 
 #include "ProtobufDyc.h"
 namespace DycSpace{
-  class ProtobufClient : public DycProtoBase
+  class ProtobufClient : protected DycProtoBase
   {
   public:
     explicit ProtobufClient(const std::string& package, const std::string& enName);
